@@ -1,0 +1,14 @@
+<div class="content-overlay d-flex">
+  <div class="col-md-3 col-lg-2 col-sm-4  users-container">
+    <app-users></app-users>
+  </div>
+  <div class="col-md-9 col-lg-10 col-sm-8 chat-container">
+    <app-chat-window></app-chat-window>
+  </div>
+</div>
+
+  <app-offer *ngIf="offerModal" ></app-offer>
+
+<div class="loader-background" *ngIf="loading">
+  <div id="loading"></div>
+</div>

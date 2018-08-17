@@ -1,0 +1,56 @@
+<div class="modal-offer" tabindex="-1" role="dialog" *ngIf="offerSend">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Send Offer</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="offerForm">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Product price</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Product price" formControlName="price">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Product quantity</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Quantity" formControlName="qty">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeSendOfferModal()">Close</button>
+        <button type="button" class="btn btn-primary" (click)="sendOffer()">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="modal-offer" tabindex="-1" role="dialog" *ngIf="offerReceive">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Received Offers</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group" *ngFor="let receivedOffers of receivedOffer">
+            <li class="list-group-item mt-3">
+              <p>Price: {{receivedOffers.price}} Quantity: {{receivedOffers.qty}}</p>
+              <div class="button-group">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="rejectOffer(receivedOffers)">Reject</button>
+                <button type="button" class="btn btn-success" (click)="acceptOffer(receivedOffers)">Accept</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeReceiveOfferModal()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+

@@ -1,0 +1,25 @@
+.input-message {
+  color: #303030;
+}
+
+.send-btn {
+  border: none;
+  outline: none;
+  background: #ffffff;
+  color: #303030;
+}
+
+.send-btn:hover {
+  color: #000;
+}
+
+.send-btn:focus {
+  background-color: rgba(6, 199, 162, .4);;
+}
+
+
+.form-control:focus {
+  outline: none;
+  box-shadow:none !important;
+  border: none;
+}

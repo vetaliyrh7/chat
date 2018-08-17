@@ -1,0 +1,25 @@
+<div class="users-overlay border">
+  <div class="users-logo">
+    <div class="profile-block">
+      <img src="https://artscimedia.case.edu/wp-content/uploads/sites/79/2016/12/14205134/no-user-image.gif" alt="No image">
+      <p>{{user.name}} {{user.surname}}</p>
+      <i class="fa fa-sign-out logout" aria-hidden="true" (click)="logout()"></i>
+    </div>
+    <hr>
+  </div>
+  <div class="users-block">
+    <p>Contacts</p>
+    <ul class="list-group">
+      <li class="list-group-item users" *ngFor="let contact of contacts" (click)="startChat(contact)" [ngClass]="{'active': contact.id === currentContactId}">
+        <div class="user-container">
+          <img src="https://artscimedia.case.edu/wp-content/uploads/sites/79/2016/12/14205134/no-user-image.gif" alt="No image">
+          <span>{{contact?.name}}</span>
+        </div>
+        <div class="offer-buttons">
+          <i class="fa fa-share-alt send-offer" (click)="sendOffer()"></i>
+          <i class="fa fa-bell received-offer" (click)="receiveOffer()"></i>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

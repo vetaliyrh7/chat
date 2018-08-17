@@ -1,0 +1,8 @@
+.content-overlay {
+  height: 100vh;
+}
+
+.users-container,
+.chat-container {
+  padding: 0;
+}

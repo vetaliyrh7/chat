@@ -1,0 +1,96 @@
+.users-overlay {
+  height: 100%;
+  max-height: 100%;
+  background: #303030;
+  color: #ffffff;
+  position: relative;
+}
+
+.users-logo p {
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 35px;
+  padding-left: 20px;
+}
+
+.profile-block {
+  display: flex;
+  align-items: center;
+  -ms-flex-pack: center;
+  margin-top: 22px;
+  padding-left: 20px;
+}
+
+.logout {
+  margin-left: 20px;
+  color: #06C7A2;
+  cursor: pointer;
+}
+
+.profile-block p {
+  font-weight: 300;
+  letter-spacing: normal;
+  font-size: 24px;
+  margin: 0;
+}
+
+.profile-block img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.users-block {
+  overflow: auto;
+}
+.users-block p{
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: lighter;
+  padding-left: 15px;
+}
+
+.list-group-item {
+  color: #ffffff;
+}
+
+.users {
+  background-color: unset;
+  border: none;
+  transition: .25s ease;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.users:hover {
+  padding-left: 30px;
+}
+
+.users img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.active {
+  background: rgba(6, 199, 162, .4);
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.send-offer {
+  margin-right: 10px;
+}
+
+.offer-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}

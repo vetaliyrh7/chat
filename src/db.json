@@ -1,0 +1,119 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Steve"
+    },
+    {
+      "id": 2,
+      "name": "Harry"
+    },
+    {
+      "id": 3,
+      "name": "Bob"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "_amecmvaqx",
+      "users": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "_ksszmfygv",
+      "users": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "_xe8cmwbn2",
+      "users": [
+        2,
+        3
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "roomId": "_amecmvaqx",
+      "senderId": 1,
+      "message": "1",
+      "timeSent": "2018-08-16T07:41:19.642Z",
+      "id": 1
+    },
+    {
+      "roomId": "_amecmvaqx",
+      "senderId": 2,
+      "message": "Yo",
+      "timeSent": "2018-08-16T14:05:12.398Z",
+      "id": 2
+    },
+    {
+      "roomId": "_amecmvaqx",
+      "senderId": 2,
+      "message": "1",
+      "timeSent": "2018-08-16T15:23:22.494Z",
+      "id": 3
+    },
+    {
+      "roomId": "_amecmvaqx",
+      "senderId": 2,
+      "message": "12",
+      "timeSent": "2018-08-16T15:23:28.687Z",
+      "id": 4
+    },
+    {
+      "roomId": "_amecmvaqx",
+      "senderId": 2,
+      "message": "4",
+      "timeSent": "2018-08-16T15:26:05.127Z",
+      "id": 5
+    },
+    {
+      "roomId": "_amecmvaqx",
+      "senderId": 2,
+      "message": "5",
+      "timeSent": "2018-08-16T15:27:40.959Z",
+      "id": 6
+    },
+    {
+      "roomId": "_amecmvaqx",
+      "senderId": 1,
+      "message": "56",
+      "timeSent": "2018-08-16T15:28:49.831Z",
+      "id": 7
+    },
+    {
+      "roomId": "_xe8cmwbn2",
+      "senderId": 2,
+      "message": "222",
+      "timeSent": "2018-08-16T15:32:39.884Z",
+      "id": 8
+    }
+  ],
+  "offers": [
+    {
+      "accept": true,
+      "reject": false,
+      "roomId": "_amecmvaqx",
+      "price": "300",
+      "qty": "3",
+      "seller": 1,
+      "buyer": 2,
+      "id": 1
+    },
+    {
+      "accept": false,
+      "reject": true,
+      "roomId": "_amecmvaqx",
+      "price": "345345",
+      "qty": "23",
+      "seller": 1,
+      "buyer": 2,
+      "id": 2
+    }
+  ]
+}

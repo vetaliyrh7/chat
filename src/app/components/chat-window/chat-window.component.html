@@ -1,0 +1,21 @@
+<div class="chat-overlay d-flex flex-column"  *ngIf="loggedUser">
+  <div class="chat-top">
+    <h1 class="active-user">{{person?.name}}</h1>
+    <hr>
+  </div>
+  <div class="chat-bottom">
+    <div class="chat-body" *ngIf="messages.length > 0">
+      <ul class="list-group">
+        <li *ngFor="let message of messages" class="message"  [ngClass]="{'messageIn': message.senderId === loggedUser.id, 'messageOut': message.senderId !== loggedUser.id }">
+          <div class="chat-message">
+            <span>{{message?.message}}</span>
+          </div>
+          <div class="chat-message-date">
+            <span class="timestamp">{{message?.timeSent |  date:'short'}}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <app-chat-input></app-chat-input>
+  </div>
+</div>
